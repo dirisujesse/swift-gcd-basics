@@ -11,6 +11,10 @@
 		8E6F7F6D29E81B8200C2964B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7F6C29E81B8200C2964B /* ContentView.swift */; };
 		8E6F7F6F29E81B8300C2964B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7F6E29E81B8300C2964B /* Assets.xcassets */; };
 		8E6F7F7229E81B8300C2964B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E6F7F7129E81B8300C2964B /* Preview Assets.xcassets */; };
+		8E6F7F7C29E82A3800C2964B /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7F7B29E82A3800C2964B /* CurrentDate.swift */; };
+		8E6F7F7E29E82A8800C2964B /* DateHttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7F7D29E82A8800C2964B /* DateHttpService.swift */; };
+		8E6F7F8129E82AE200C2964B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7F8029E82AE200C2964B /* Constants.swift */; };
+		8E6F7F8329E82EDA00C2964B /* DateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F7F8229E82EDA00C2964B /* DateListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8E6F7F6C29E81B8200C2964B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8E6F7F6E29E81B8300C2964B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E6F7F7129E81B8300C2964B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8E6F7F7B29E82A3800C2964B /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
+		8E6F7F7D29E82A8800C2964B /* DateHttpService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHttpService.swift; sourceTree = "<group>"; };
+		8E6F7F8029E82AE200C2964B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8E6F7F8229E82EDA00C2964B /* DateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,10 @@
 		8E6F7F6929E81B8200C2964B /* Dates */ = {
 			isa = PBXGroup;
 			children = (
+				8E6F7F7F29E82AC700C2964B /* Constants */,
+				8E6F7F7A29E82A1A00C2964B /* Service */,
+				8E6F7F7929E829F900C2964B /* ViewModel */,
+				8E6F7F7829E829E700C2964B /* Model */,
 				8E6F7F6A29E81B8200C2964B /* DatesApp.swift */,
 				8E6F7F6C29E81B8200C2964B /* ContentView.swift */,
 				8E6F7F6E29E81B8300C2964B /* Assets.xcassets */,
@@ -65,6 +77,38 @@
 				8E6F7F7129E81B8300C2964B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8E6F7F7829E829E700C2964B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7F7B29E82A3800C2964B /* CurrentDate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8E6F7F7929E829F900C2964B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7F8229E82EDA00C2964B /* DateListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8E6F7F7A29E82A1A00C2964B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7F7D29E82A8800C2964B /* DateHttpService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8E6F7F7F29E82AC700C2964B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8E6F7F8029E82AE200C2964B /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6F7F8329E82EDA00C2964B /* DateListViewModel.swift in Sources */,
+				8E6F7F8129E82AE200C2964B /* Constants.swift in Sources */,
 				8E6F7F6D29E81B8200C2964B /* ContentView.swift in Sources */,
+				8E6F7F7C29E82A3800C2964B /* CurrentDate.swift in Sources */,
 				8E6F7F6B29E81B8200C2964B /* DatesApp.swift in Sources */,
+				8E6F7F7E29E82A8800C2964B /* DateHttpService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
