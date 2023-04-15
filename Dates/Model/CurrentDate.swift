@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct CurrentDate: Identifiable, Decodable {
+    let id = UUID()
+    let date: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case date = "date"
+    }
+}
+

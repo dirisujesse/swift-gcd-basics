@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct Constants {
+    static let BASE_URL = "https://ember-sparkly-rule.glitch.me"
+}
